@@ -1,0 +1,211 @@
+@import "tailwindcss";
+
+body {
+  @apply p-1 md:p-2 lg:p-3 bg-slate-950 text-slate-100 antialiased overflow-x-hidden;
+}
+.root-layout {
+  @apply min-h-svh flex flex-col;
+}
+.main-page {
+  @apply pt-40 flex-1 w-full flex flex-col gap-16 pb-25;
+}
+
+.nav-bar {
+  @apply fixed top-0 left-0 right-0 z-50 w-full max-w-7xl mx-auto px-6 py-4 flex flex-col gap-3 sm:flex-row  items-center justify-between bg-slate-950/90 backdrop-blur-md border-b border-slate-800/80;
+}
+.nav-logo {
+  @apply flex items-center gap-2.5 no-underline transition-opacity hover:opacity-90;
+}
+.logo-icon {
+  @apply bg-blue-600 text-white font-black text-sm px-2 py-1 rounded-md tracking-wider;
+}
+.nav {
+  @apply flex items-center gap-6 sm:gap-8;
+}
+.nav-tab-link {
+  @apply text-slate-400 hover:text-white font-medium text-sm sm:text-base transition-colors duration-200 no-underline pb-1 border-b-2 border-transparent;
+}
+.active-tab {
+  @apply text-blue-400 border-blue-500 font-semibold;
+}
+
+.header-sec {
+  @apply relative w-full min-h-95 sm:min-h-112.5 overflow-hidden bg-slate-900 border-b border-slate-800 flex items-center justify-center text-center px-4 py-12;
+}
+.image {
+  @apply absolute inset-0 w-full h-full object-cover filter brightness-50 z-0;
+}
+.the-div {
+  @apply relative z-10 flex flex-col items-center justify-center max-w-5xl mx-auto px-4;
+}
+.title {
+  @apply text-3xl sm:text-5xl md:text-6xl font-extrabold text-white tracking-tight mb-4 leading-tight max-w-full;
+}
+.parag {
+  @apply text-slate-200 text-sm sm:text-lg md:text-xl italic max-w-3xl mx-auto leading-relaxed;
+}
+
+.sec {
+  @apply flex flex-col gap-6 w-full max-w-4xl mx-auto px-4 my-6 sm:my-20;
+}
+.section-header {
+  @apply text-center flex flex-col gap-1;
+}
+.section-title {
+  @apply text-3xl font-extrabold text-white tracking-tight text-center;
+}
+.section-subtitle {
+  @apply text-slate-400 text-sm sm:text-base;
+}
+.slider {
+  @apply relative w-full h-72 sm:h-96 rounded-2xl overflow-hidden border border-slate-800 bg-slate-900 flex items-center justify-center;
+}
+.slider-image {
+  @apply w-full h-full object-cover object-center transition-all duration-700 ease-in-out;
+}
+.slider-dots {
+  @apply absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-20;
+}
+.slider-dot {
+  @apply w-3 h-3 rounded-full bg-white/50 border-none cursor-pointer transition-all hover:bg-white;
+}
+.slider-dot-active {
+  @apply bg-blue-500 scale-125 w-6 rounded-lg;
+}
+
+.cta-banner {
+  @apply w-full max-w-4xl mx-auto mt-8 mb-12 sm:mt-30 sm:mb-16 p-8 sm:p-12 rounded-2xl bg-indigo-950/40 border border-indigo-800/50 flex flex-col items-center justify-center text-center gap-4 relative overflow-hidden;
+}
+.btn-main {
+  @apply mt-2 px-6 py-3 bg-blue-600 hover:bg-blue-500 text-white font-semibold text-sm sm:text-base rounded-lg shadow-md transition-all duration-200 cursor-pointer inline-block;
+  span {
+    @apply mx-1;
+  }
+}
+
+.footer {
+  @apply mt-auto w-full max-w-7xl mx-auto py-6 px-6 border-t border-slate-800/80 bg-slate-950 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs sm:text-sm text-slate-400 font-normal;
+}
+.footer address {
+  @apply not-italic text-slate-300 font-medium;
+}
+.footer p {
+  @apply m-0 p-0 leading-normal;
+}
+
+.cata-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full mt-4 justify-items-center sm:justify-between;
+}
+.cata-card {
+  @apply bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between transition-all duration-300 hover:border-slate-700 hover:shadow-lg max-w-[85svw] sm:max-w-none;
+}
+.card-title {
+  @apply text-xl font-bold text-white tracking-tight;
+}
+.card-desc {
+  @apply text-slate-400 text-sm leading-relaxed flex-1;
+}
+.card-count {
+  @apply text-xs font-semibold text-blue-600 bg-slate-950 border border-blue-800/40 px-2.5 py-1 rounded-full w-fit mt-1;
+}
+
+.gap {
+  @apply flex flex-col gap-9 mt-1;
+}
+.course-img {
+  @apply w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105;
+}
+.level-section {
+  @apply flex flex-col gap-5;
+}
+.capitalize {
+  @apply text-xs font-semibold uppercase tracking-wider text-blue-400 bg-blue-950/50 border border-blue-800/40 px-3 py-1.5 rounded-full;
+}
+.level-line {
+  @apply flex-1 h-px bg-slate-800/80;
+}
+.thumb-box {
+  @apply relative w-full aspect-video rounded-xl overflow-hidden bg-slate-950 border border-slate-800;
+}
+.thumb-img {
+  @apply w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105;
+}
+.duration {
+  @apply absolute bottom-2 right-2 bg-slate-950/85 backdrop-blur-sm text-slate-200 text-xs font-semibold px-2 py-0.5 rounded border border-slate-700/60;
+}
+
+.btn-save-box {
+  @apply flex justify-center items-center;
+}
+
+.btn-save {
+  @apply disabled:opacity-60 disabled:cursor-not-allowed transition-all;
+}
+.search-box {
+  form {
+    @apply relative w-full max-w-2xl mx-auto grid grid-rows-2 justify-items-center items-center gap-3 p-2 bg-slate-900/90 backdrop-blur-md border border-slate-800/80 rounded-2xl shadow-xl transition-all duration-300 focus-within:border-blue-500/80 focus-within:ring-2 focus-within:ring-blue-500/20 my-6;
+  }
+}
+.search-input {
+  @apply flex-1 bg-transparent px-4 py-2.5 text-sm sm:text-base text-slate-100 placeholder-slate-500 outline-none border-2 border-white rounded-lg w-7/10 mx-auto my-1 sm:my-2;
+}
+.search-box .btn-main {
+  @apply shrink-0 mt-0 px-6 py-2.5 rounded-xl;
+}
+
+.search-controls {
+  @apply grid grid-cols-2 justify-items-center items-center w-7/10 mx-auto;
+}
+
+.range {
+  @apply w-full grid grid-rows-2 justify-items-center items-center;
+  label {
+    @apply text-center w-full inline-block mx-auto my-1;
+  }
+}
+
+.range-box {
+  @apply flex flex-row justify-around items-center gap-2;
+  div {
+    @apply sm:w-6 md:w-8 lg:w-10 text-center;
+  }
+}
+
+.results-range {
+  @apply w-95/100 mx-auto;
+}
+
+.topic-group {
+  @apply flex flex-col items-center gap-8 pb-8 border-b border-slate-800/80 last:border-none;
+}
+
+.topic-title {
+  @apply text-center text-2xl sm:text-3xl font-extrabold text-white tracking-tight;
+}
+
+.dash-nav {
+  @apply flex flex-row justify-around gap-6 border-b border-slate-800/80 pb-3;
+}
+
+.player-card {
+  @apply flex flex-col gap-8 mt-3 md:mt-6 lg:mt-9;
+}
+
+.player-box {
+  @apply flex flex-col items-center justify-around gap-4 sm:gap-8 text-center mt-3 mb-4;
+}
+
+.player-frame {
+  @apply m-auto border-2 border-blue-500 w-fit;
+}
+
+.player-div {
+  @apply w-[90svw] h-[calc(9/16*(90svw))] sm:w-[560px] sm:h-[315px];
+}
+
+.player-disc {
+  @apply w-[90%] sm:w-[550px];
+}
+/* {
+  border: solid 1px white;
+}*/
